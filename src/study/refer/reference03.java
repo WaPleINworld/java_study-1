@@ -1,28 +1,79 @@
 package study.refer;
 
-public class reference03 {
+public class Reference03 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		// 2차원 배열
 		
-		int[] arr1 = {1,2,3};
-		int[] arr2 = {1,2,3};
-		int[] arr22 = arr2;
+		int[][] scores = new int[2][3];
+		
+		/*
+			0	1	2
+		0	ㅁ	ㅁ	ㅁ
+		1	ㅁ	ㅁ	ㅁ
+		
+		*/
+		
+		boolean[][] arrs = new boolean[3][4];
+		
+		/*
+			0	1	2	3
+		0	ㅁ	ㅁ	ㅁ	ㅁ
+		1	ㅁ	ㅁ	ㅁ	ㅁ		arrs[1][2]
+		2	ㅁ	ㅁ	ㅁ	ㅁ
+		
+		 */
 		
 		
-		System.out.println(arr1 == arr2);
-		System.out.println(arr1[1] == arr2[1]);
+		int[][] arr1 = new int[3][4];	// 0 초기화 
 		
-		System.out.println(arr2 == arr22);
+		for(int i=0; i<3; i++) {//i:0 1 2
+			for(int j=0; j<4; j++) {//j:0 1 2 3
+				//i:0
+				//j:0 1 2 3
+				//i:1
+				//j:0 1 2 3
+				//i:2
+				//j:0 1 2 3 
+				System.out.print(arr1[i][j] + " ");
+			}
+			System.out.println();
+		}
 		
-		String[] arr3 = {"A","B","C"};
-		String[] arr4 = {"A","B","C"};
+		//int[][] arr2 = {  {1,2,3}, {4,5,6} ,{5,6,7}, {9,9,10}  };
+		int[][] arr2 = {  {1,2,3}, {4,5,6}  };
 		
-		System.out.println(arr3 == arr4);
-		System.out.println(arr3[0] == arr4[0]);
-		System.out.println(arr3[0].equals(arr4[0]));
 		
+		//[2][3]
+		//i:0 1
+		//j:0 1 2
+		//					2
+		for(int i=0; i<arr2.length; i++) {
+			//					3
+			for(int j=0; j<arr2[i].length; j++) {		//i:
+				System.out.print(arr2[i][j] + " ");		//j:
+			}
+			System.out.println();
+		}
 	}
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
