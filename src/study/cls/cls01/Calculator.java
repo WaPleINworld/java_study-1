@@ -11,14 +11,14 @@ public class Calculator {
 	//메소드 (동작/기능)
 	
 	/*
-	 	리턴		매개변수
-	 	O		O
-	 	O		X
-	 	X		O
-	 	X		X
-	 	
-	 리턴O : void
-	 리턴X : 리턴 할 타입
+		리턴		매개변수
+		O		O
+		O		X
+		X		O
+		X		X
+
+	리턴O : void
+	리턴X : 리턴 할 타입
 	 */
 	
 	//리턴X 매개변수X
@@ -54,7 +54,7 @@ public class Calculator {
 	}
 	
 	String sum22(int x, int y) {
-		int result = x+y;
+		int result = x+y; 
 		return result +"";
 	}
 	
@@ -67,7 +67,7 @@ public class Calculator {
 		int sum = 0;
 		for(int i=0; i<arr.length; i++) {
 			sum = sum + arr[i];
-			
+		
 		}
 		return sum;
 	}
