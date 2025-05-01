@@ -15,6 +15,8 @@ public class SingletonMain {
 //		st = Singleton.singleton;
 		st = Singleton.getInstance();
 		
+		Singleton st2 = Singleton.getInstance();
+		Singleton st3 = Singleton.getInstance();
 	}
 
 }
